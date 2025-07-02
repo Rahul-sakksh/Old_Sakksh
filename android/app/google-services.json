@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254299425736",
+    "project_id": "sakksh-f2936",
+    "storage_bucket": "sakksh-f2936.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254299425736:android:45c790b968fe596879cefd",
+        "android_client_info": {
+          "package_name": "com.schoofi.sakksh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOzGBBclnKTZ1Lm9Lp-jo7V6Mu_hP8hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
