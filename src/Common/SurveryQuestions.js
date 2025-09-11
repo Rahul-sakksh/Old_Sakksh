@@ -480,7 +480,10 @@ class SurveyQuestions extends Component {
       <View style={styles.questionContainer}>
         <Text style={styles.item}>
           {this.props.index + 1}. {this.props.data.survey_query}
-          {this.props.data.Mandatory === 'Yes' || (this.props.data.option_types === 'YENO' && (this.props.data.yes_image == "R" || this.props.data.no_image == "R") ) ? (
+          {/* {this.props.data.Mandatory === 'Yes' || (this.props.data.option_types === 'YENO' && (this.props.data.yes_image == "R" || this.props.data.no_image == "R") ) ? (
+           <Text style={{color: 'red', fontSize: 20}}>*</Text>
+          ) : null} */}
+           {this.props.data.Mandatory === 'Yes' ? (
            <Text style={{color: 'red', fontSize: 20}}>*</Text>
           ) : null}
         </Text>
@@ -537,7 +540,7 @@ class SurveyQuestions extends Component {
     
 
             <Ionicons name="camera-outline" size={20} color="grey" />
-            {(this.props.data.yes_image == "R" && this.props.data.no_image == "R") ||
+            {( (selectedAction == "Yes" || selectedAction == "No" ) && this.props.data.yes_image == "R" && this.props.data.no_image == "R") ||
              (this.props.data.yes_image == "R" && selectedAction == "Yes") ||
              (this.props.data.no_image == "R" && selectedAction == "No") ? (
               ((selectedAction !== "NA") && <Text style={{color: 'red', fontSize: 20, position: "absolute", top: -12, right: -6}}>*</Text>)
