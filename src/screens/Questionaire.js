@@ -664,9 +664,9 @@ console.log(this.state.submitPerc,'subPer>>>>>>>>');
       return {flg: false ,msg: `Option selection is mandatory`};
     }
 
-    if (data.option_types === 'YENO' && choosen_value == '') {
-      return {flg: false ,msg: `Option selection is mandatory`};
-    }
+    // if (data.option_types === 'YENO' && choosen_value == '') {
+    //   return {flg: false ,msg: `Option selection is mandatory`};
+    // }
 
   
     if (data.option_types === "YENONA" && choosen_value === 'NA') {
