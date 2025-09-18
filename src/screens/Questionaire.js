@@ -668,6 +668,16 @@ console.log(this.state.submitPerc,'subPer>>>>>>>>');
     //   return {flg: false ,msg: `Option selection is mandatory`};
     // }
 
+     if ((data.option_types === 'YENO' || data.option_types === 'YENONA') && choosen_value == '' && (survey_images.length !== 0 || report_desc !== '')) {      
+     if (survey_images.length > 0 && report_desc !== "") {
+       return { flg: false, msg: `You have added ${survey_images.length > 1 ? "images" : "an image"} and notes, please select an option.` };
+       } else if (survey_images.length > 0) {
+       return { flg: false, msg: `You have added ${survey_images.length > 1 ? "images" : "an image"}, please select an option.` };
+      }else if (report_desc !== '') {
+         return { flg: false, msg: "You have added notes, please select an option." };
+      }
+    }
+
   
     if (data.option_types === "YENONA" && choosen_value === 'NA') {
       return  {flg: true ,msg: ``};

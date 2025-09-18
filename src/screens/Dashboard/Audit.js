@@ -269,7 +269,7 @@ useEffect(() => {
   
       if (res.data.status === 'success') {
         if (res.data.data.length > 0) {
-          // console.log("res.data.data ======>>>> ", res.data.data);
+         console.log("res.data.data ======>>>> ", res.data.data);
           setStoreList(res.data.data);
         } else {
           Snackbar.show({
@@ -319,7 +319,7 @@ useEffect(() => {
               
                   if (res.data.status === 'success') {
                     if (res.data.data.length > 0) {
-                      // console.log("res.data.data ======>>>> survey", res.data.data);
+                       console.log("res.data.data ======>>>> survey", res.data.data);
                       setSurveyList(res.data.data);
                     } else {
                       Snackbar.show({
